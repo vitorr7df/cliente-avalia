@@ -167,7 +167,7 @@ textarea {
 footer {
     padding: 4px;
     background-color: rgb(246, 255, 0);
-    color: white;
+    color: rgb(6, 6, 6);
 }
 
 footer ul {
@@ -193,4 +193,13 @@ footer ul li {
     .col img {
         width: 40px;
     }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 10px;
 }

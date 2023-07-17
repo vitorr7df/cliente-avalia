@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Satisfação</title>
+    <title>Pesquisa de Satisfação</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
 <body>
     <header>
-        <h2 id="formulario">Formulário de Satisfação</h2>
+        <div class="logo-container">
+            <img src="./img/REAL_LOGO.png" alt="Logo">
+            <h2 id="formulario">Pesquisa de Satisfação</h2>
+        </div><br>
+
     </header>
     <nav>
         <ul>
@@ -24,7 +28,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                1) Você gostou do produto adquirido?
+                1) Em relação ao atendimento e suporte:
             </div>
             <div class="col">
                 <input type="radio" name="p1" id="p11" value="5"><img src="./img/muito-satisfeito.png"
@@ -43,7 +47,7 @@
 
         <div class="row">
             <div class="col">
-                2) Indicaria o produto para alguém?
+                2) Indicaria nossa loja a alguém?
             </div>
             <div class="col">
                 <input type="radio" name="p2" id="p21" value="5"><img src="./img/muito-satisfeito.png"
@@ -62,7 +66,7 @@
 
         <div class="row">
             <div class="col">
-                3) Você achou o produto atrativo?
+                3) Você achou os preços atrativos?
             </div>
             <div class="col">
                 <input type="radio" name="p3" id="p31" value="5"><img src="./img/muito-satisfeito.png"
@@ -81,7 +85,7 @@
 
         <div class="row">
             <div class="col">
-                4) Em relação ao atendimento e suporte:
+                4) O que achou da variedade de produtos?:
             </div>
             <div class="col">
                 <input type="radio" name="p4" id="p41" value="5"><img src="./img/muito-satisfeito.png"
@@ -115,86 +119,31 @@
             </div>
         </div>
 
-        <hr>
-
-        <div class="row">
-            <div class="col">
-                6) Qualidade do material do produto:
-            </div>
-            <div class="col">
-                <input type="radio" name="p6" id="p61" value="5"><img src="./img/muito-satisfeito.png"
-                    alt="Muito Satisfeito">
-                <input type="radio" name="p6" id="p62" value="4"><img src="./img/pouco-satisfeito.png" alt="Satisfeito">
-                <input type="radio" name="p6" id="p63" value="3"><img src="./img/neutro.png" alt="Neutro">
-                <input type="radio" name="p6" id="p64" value="2"><img src="./img/pouco-insatisfeito.png"
-                    alt="Insatisfeito">
-                <input type="radio" name="p6" id="p65" value="1"><img src="./img/muito-insatisfeito.png"
-                    alt="Muito Insatisfeito">
-
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col">
-                7) Durabilidade do Produto:
-            </div>
-            <div class="col">
-                <input type="radio" name="p7" id="p71" value="5"><img src="./img/muito-satisfeito.png"
-                    alt="Muito Satisfeito">
-                <input type="radio" name="p7" id="p72" value="4"><img src="./img/pouco-satisfeito.png" alt="Satisfeito">
-                <input type="radio" name="p7" id="p73" value="3"><img src="./img/neutro.png" alt="Neutro">
-                <input type="radio" name="p7" id="p74" value="2"><img src="./img/pouco-insatisfeito.png"
-                    alt="Insatisfeito">
-                <input type="radio" name="p7" id="p75" value="1"><img src="./img/muito-insatisfeito.png"
-                    alt="Muito Insatisfeito">
-
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col">
-                8) Em relação ao serviço de entrega:
-            </div>
-            <div class="col">
-                <input type="radio" name="p8" id="p81" value="5"><img src="./img/muito-satisfeito.png"
-                    alt="Muito Satisfeito">
-                <input type="radio" name="p8" id="p82" value="4"><img src="./img/pouco-satisfeito.png" alt="Satisfeito">
-                <input type="radio" name="p8" id="p83" value="3"><img src="./img/neutro.png" alt="Neutro">
-                <input type="radio" name="p8" id="p84" value="2"><img src="./img/pouco-insatisfeito.png"
-                    alt="Insatisfeito">
-                <input type="radio" name="p8" id="p85" value="1"><img src="./img/muito-insatisfeito.png"
-                    alt="Muito Insatisfeito">
-
-            </div>
-        </div>
 
         <hr>
         <div class="row">
             <div class="col">
-                <button class="btn-avaliar" onclick="calcularPontos()">
+                <button class="btn-avaliar" onclick="enviarPesquisa()">
                     📊 Avaliar!
                 </button>
 
             </div>
-            <div class="col">
+            <!-- <div class="col">
                 <span id="resultado">Resultado</span>
-            </div>
+            </div> -->
 
         </div>
 
     </div>
 
     <footer>
-        <!-- <ul>
-            <li>contato@senai.org.br</li>
-            <li>(48) 98432-6584</li>
-        </ul> -->
+        <ul>
+            <li>CENTRAL PEÇAS E ACESSÓRIOS PARA VEÍCULOS LTDA</li>
+            <li>CNPJ: 05.849.121/0001-26 | END: SIA Trecho 6, 110/120</li>
+        </ul>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
