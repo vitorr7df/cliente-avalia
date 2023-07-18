@@ -81,10 +81,12 @@ nav li a:hover {
 
 
 .btn-avaliar {
+    font-size: large;
+    font-weight: bolder;
     width: 90%;
-    background-color: rgb(172, 216, 255);
-    color: #000;
-    border: 1px solid rgb(0, 70, 131);
+    background-color: #00aee8;
+    color: #fff;
+    border: 1px solid #007aff;
     border-radius: 25px;
     padding: 8px;
     cursor: pointer;
@@ -92,9 +94,12 @@ nav li a:hover {
 
 .btn-avaliar:hover {
     color: #fff;
-    background-color: rgb(32, 133, 221);
+    background-color: #007aff;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
 }
+
+
 
 .row-title {
     display: flex;
@@ -202,4 +207,21 @@ footer ul li {
 
 .logo-container img {
     margin-right: 10px;
+}
+
+#titulo1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 60px;
+    text-decoration: underline;
+}
+
+#titulo2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 285px;
+    margin-top: -40px;
+    text-decoration: underline;
+}
+
+.col {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

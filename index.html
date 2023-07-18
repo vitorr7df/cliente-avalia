@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa de Satisfação</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
@@ -13,16 +14,15 @@
     <header>
         <div class="logo-container">
             <img src="./img/REAL_LOGO.png" alt="Logo">
-            <h2 id="formulario">Pesquisa de Satisfação</h2>
+            <h2 id="titulo1">Pesquisa de Satisfação</h2>
         </div><br>
-
+        <h3 id="titulo2">Avalie a Real
+            Acessórios</h3>
     </header>
     <nav>
-        <ul>
-            <li><a class="active" href="index.html">Principal</a></li>
-            <li><a href="contato.html">Contato</a></li>
-
-        </ul>
+        <!-- <ul>
+            <h2>Avalie a Real Acessórios</h2>
+        </ul> -->
     </nav>
 
     <div class="container">
@@ -123,7 +123,7 @@
         <hr>
         <div class="row">
             <div class="col">
-                <button class="btn-avaliar" onclick="enviarPesquisa()">
+                <button class="btn-avaliar" id="btn-avaliou" onclick="enviarPesquisa()">
                     📊 Avaliar!
                 </button>
 
@@ -143,7 +143,6 @@
         </ul>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

@@ -4,12 +4,12 @@ const enviarPesquisa = function () {
         p2: $('input[name=p2]:checked').val(),
         p3: $('input[name=p3]:checked').val(),
         p4: $('input[name=p4]:checked').val(),
-        p5: $('input[name=p5]:checked').val()
+        p5: $('input[name=p5]:checked').val(),
     };
 
     $.ajax({
         type: 'POST',
-        url: 'URL_DO_SERVIDOR', // Substitua pelo URL do seu servidor de backend que receberá os dados da pesquisa
+        url: '/enviarPesquisa', // Rota do servidor que recebe e salva os dados da pesquisa
         data: formData,
         dataType: 'json',
         success: function (response) {
@@ -19,6 +19,6 @@ const enviarPesquisa = function () {
         error: function (error) {
             // Ação em caso de erro (opcional) - Você pode exibir uma mensagem de erro, registrar o erro, etc.
             console.error('Erro ao enviar dados da pesquisa:', error);
-        }
+        },
     });
 };
