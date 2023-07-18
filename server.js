@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const axios = require('axios');
-//import { connect } from 'database.js';
+const { connect } = require('./database');
 
 const port = process.env.PORT || 3000;
 
@@ -18,16 +18,12 @@ app.get('/', (req, res) => {
 });
 
 // Rota para receber e salvar os dados da pesquisa no banco de dados do Neon
-app.post('/enviarPesquisa', async (req, res) => {
+app.post('/enviarPesquisa', (req, res) => {
     try {
-        // Faça uma requisição POST ao Neon com os dados da pesquisa
-        const response = await axios.post('https://api.neon.tech/v1/data/satisfacao', req.body, {
-            headers: {
-                Authorization: 'cliente-avalia',
-            },
-        });
+        // Chama a função connect para salvar os dados no banco de dados
+        connect(req.body);
 
-        console.log('Dados da pesquisa enviados com sucesso:', response.data);
+        // Envia uma resposta de sucesso ao cliente
         res.status(200).json({ message: 'Dados da pesquisa enviados com sucesso!' });
     } catch (error) {
         console.error('Erro ao enviar dados da pesquisa:', error.message);
