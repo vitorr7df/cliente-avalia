@@ -22,6 +22,7 @@ const connect = async (formData) => {
         );
 
         await client.end();
+        console.log(formData);
     } catch (error) {
         console.log(error);
     }
