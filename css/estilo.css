@@ -50,7 +50,7 @@ nav li a:hover {
     opacity: 1;
 }
 
-.container {
+.form {
     width: 90%;
     border: 1px solid black;
     border-radius: 0.35em;

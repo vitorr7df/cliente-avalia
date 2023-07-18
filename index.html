@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
+
+
 <body>
     <header>
         <div class="logo-container">
@@ -25,7 +27,7 @@
         </ul> -->
     </nav>
 
-    <div class="container">
+    <div class="form">
         <div class="row">
             <div class="col">
                 1) Em relação ao atendimento e suporte:
@@ -42,7 +44,6 @@
 
             </div>
         </div>
-
         <hr>
 
         <div class="row">
@@ -118,23 +119,34 @@
 
             </div>
         </div>
-
-
         <hr>
+
+        <div class="row">
+            Observações:
+            <div class="col">
+                <textarea id="obs" placeholder="Opcional"></textarea>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            Nome:
+            <div class="col">
+                <input type="text" id="nome" placeholder="Opcional" style="width: 100%;">
+            </div>
+        </div>
+        <hr>
+
         <div class="row">
             <div class="col">
-                <button class="btn-avaliar" id="btn-avaliou" onclick="enviarPesquisa()">
+                <button class="btn-avaliar" id="btn-avaliou">
                     📊 Avaliar!
                 </button>
-
             </div>
-            <!-- <div class="col">
-                <span id="resultado">Resultado</span>
-            </div> -->
-
         </div>
 
     </div>
+
 
     <footer>
         <ul>

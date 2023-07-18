@@ -22,14 +22,16 @@ app.post('/enviarPesquisa', (req, res) => {
     try {
         // Chama a função connect para salvar os dados no banco de dados
         connect(req.body);
-
+        // console.log(formData)
         // Envia uma resposta de sucesso ao cliente
         res.status(200).json({ message: 'Dados da pesquisa enviados com sucesso!' });
+
     } catch (error) {
         console.error('Erro ao enviar dados da pesquisa:', error.message);
         res.status(500).json({ error: 'Erro ao enviar dados da pesquisa.' });
     }
 });
+
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
