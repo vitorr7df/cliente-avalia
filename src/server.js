@@ -6,14 +6,15 @@ const { connect } = require('./database');
 
 const port = process.env.PORT || 3000;
 
-app.use('/css', express.static(path.join(__dirname, 'css')));
-app.use('/img', express.static(path.join(__dirname, 'img')));
-app.use('/js', express.static(path.join(__dirname, 'js')));
+
+app.use('/css', express.static(path.join(__dirname, '../css')));
+app.use('/img', express.static(path.join(__dirname, '../img')));
+app.use('/js', express.static(path.join(__dirname, '../js')));
 
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    const indexPath = path.join(__dirname, 'index.html');
+    const indexPath = path.join(__dirname, '../index.html');
     res.sendFile(indexPath);
 });
 

@@ -19,7 +19,7 @@ $('#btn-avaliou').click(function () {
 
     $.ajax({
         type: 'POST',
-        url: '/enviarPesquisa',
+        url: './enviarPesquisa',
         data: JSON.stringify(formData), // Converta o objeto formData para JSON
         dataType: 'json',
         contentType: 'application/json', // Adicione o header 'Content-Type'
