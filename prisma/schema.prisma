@@ -21,4 +21,6 @@ model Satisfacao {
   pergunta_cinco Int
   obs           String?
   nome          String
+
+  @@map("satisfacao")
 }
