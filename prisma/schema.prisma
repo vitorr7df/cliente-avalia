@@ -9,10 +9,10 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = ".env("DATABASE_URL")"
 }
 
-model Satisfacao {
+model satisfacao {
   id_pesquisa   Int     @id @default(autoincrement())
   pergunta_um   Int
   pergunta_dois Int
